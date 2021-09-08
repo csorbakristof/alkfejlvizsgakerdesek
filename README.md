@@ -1,0 +1,2 @@
+# alkfejlvizsgakerdesek
+Alkalmazásfejlesztés tantárgy vizsgakérdései

@@ -1,5 +1,4 @@
-# alkfejlvizsgakerdesek
-Alkalmazásfejlesztés tantárgy vizsgakérdései
+# Alkalmazásfejlesztés tantárgy vizsgakérdései
 
 Ez a repository ad otthont az Alkalmazásfejlesztés tantárgy keretében, kollaborítv formában elkészített vizsgakérdés gyűjteménynek.
 

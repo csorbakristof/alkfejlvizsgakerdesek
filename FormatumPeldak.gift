@@ -1,0 +1,56 @@
+$CATEGORY: egyeb/formatumpeldak
+
+// Ez itt egy kommentár.
+// Leírás a GIFT formátumról: https://docs.moodle.org/311/en/GIFT_format
+
+// Igaz/hamis kérdések
+// Igaz
+::A helyes működéshez elég, ha a MAC cím csak a lokális hálózaton egyedi.{T#Visszajelzés hibás válasz esetén#Visszajelzés helyes válasz esetén}
+// Hamis
+::A MAC címet a hálókártya bekapcsolás után a DHCP szervertől kapja meg.{F#Nem jó!#Helyes!}
+
+// Párosításos feladat
+::Melyik hálózati rétegnek mi a feladata?
+{
+    =Alkalmazási réteg -> Az alkalmazás specifikus funkciók
+    =Szállítási réteg -> A csomagok hiány- és duplikáció mentes, sorrendhelyes megérkezését biztosítja.
+    =Hálózati réteg -> A csomagok eljuttatása a címzetthez
+    =Adatkapcsolati réteg -> A helyi hálózaton az adatok eljuttatása egyik eszközről a másikra.
+    =Fizikai réteg -> Az adathordozó médiumra vonatkozó előírások
+}
+
+// Multiple choice, 1 helyes válasszal
+::Melyik hálózati réteghez tartoznak az SMTP, POP3 és IMAP szolgáltatások?
+{
+    =Alkalmazási réteg#Helyes!
+    ~Megjelenítési réteg#Hibás, ennek a rétegnek semmi köze ezekhez a protokollokhoz!
+    ~Viszony réteg
+    ~Szállítási réteg
+    ~Hálózati réteg
+    ~Adatkapcsolati réteg
+    ~Fizikai réteg
+    ~Egyik sem
+}
+
+// Multiple choice több helyes válasszal, százalékos pont kiosztással
+::Melyek az Internet protokoll rétegei?
+{
+    ~%20%Alkalmazási réteg
+    ~%-100%Megjelenítési réteg (presentation layer)
+    ~%-100%Viszony réteg (session layer)
+    ~%20%Szállítási réteg (transmission layer)
+    ~%20%Hálózati réteg (network layer)
+    ~%20%Adatkapcsolati réteg (data access layer)
+    ~%20%Fizikai réteg (physical layer)
+}
+
+// Speciális karakterek használata a kérdésben vagy a válaszokban
+::Email Mire Illeszkedik 1::Mely stringek (egészére) illeszkedik a <CDATA>^[a-zöü.]+.[a-z#öő.]+$<CDATA> reguláris kifejezés?
+{
+~%50%<CDATA>fonok@ceg.hu</CDATA>
+~%-100%<CDATA>nagyfőnök@example.com</CDATA>
+~%-100%<CDATA>mr&#35;hashmark@example.com</CDATA>
+~%50%<CDATA>furadomain@example.com.</CDATA>
+~%-100%<CDATA>123user@example.com</CDATA>
+~%-100%<CDATA>@there.com</CDATA>
+}
